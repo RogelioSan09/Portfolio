@@ -1,0 +1,39 @@
+.container{
+    background-color: turquoise;
+    border: 1px solid black;
+}
+
+h1, h2{
+    color: black;
+}
+
+p{
+    color: maroon;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+    border: 1px solid red;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    width: 85px;
+    color:aliceblue;
+    padding: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover{
+    background-color:brown;
+    color:antiquewhite;
+}
