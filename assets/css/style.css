@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 /*
 Set web page background.
 Set width and height of background.
@@ -5,8 +8,6 @@ Set border size, style and color.
 */
 .container{
     background-color: lightseagreen;
-    width: 100%;
-    height: 100%;
     border: 2px solid black;
 }
 
@@ -16,8 +17,7 @@ Set background color header and section titles.
 Set width of header and section title box.
 Set border size, style and color of header and section titles.
 */
-h1,
-h2{
+h1{
     color: black;
     background-color: blanchedalmond;
     width: 225px;
@@ -25,55 +25,45 @@ h2{
 }
 
 /*
-Set text color of h3.
-Set background color h3.
-Set width and height of h3 box.
+Set text color of h2.
+Set background color h2.
+Set width and height of h2 box.
 Set border size, style and color of header and section titles.
 */
-h3{
+h2{
     color: black;
     background-color: blanchedalmond;
-    width: 99%;
-    height: 500px;
+    width: 99.9%;
+    height: 750px;
     border: 3px double black; 
 }
 
-/*Creates a flexbox*/
-main{
-    display: flex;
+h3{
+    color: black;
+    background-color: blanchedalmond;
+    border: 3px double black; 
 }
 
 /*
-Creates a side bar, takes up 25% of the width of display.
-Gave sidebar a padding of 2px.
-Gave sidebar a flex-wrap property to maintain section titles within sidebar container.
-*/
-aside{
-    flex:25%;
-    padding: 2px;
-    flex-wrap: wrap;
-}
-
-/*
-Sets section to take up 75% of the width of display.
+Sets section to wrap text.
 Gave sidebar a padding of 2px.
 */
 section{
-    flex: 75%;
+    display: flex;
+    flex-wrap: wrap;
     padding: 2px;
 }
 
 /*
-Lines 69-78: 
 Created an unordered list and removed list formatting.
 Set margin to 0 and padding to 2.
-
+Creates a scroll bar if nav bar does not fit on screen.
 */
 ul{
     list-style-type: none;
     margin: 0;
     padding: 2;
-    overflow: hidden;
+    overflow: auto;
 }
 
 li{
