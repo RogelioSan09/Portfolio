@@ -1,39 +1,136 @@
+/*
+Set web page background.
+Set width and height of background.
+Set border size, style and color.
+*/
 .container{
-    background-color: turquoise;
-    border: 1px solid black;
+    background-color: lightseagreen;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
 }
 
-h1, h2{
+/*
+Set text color of header and section titles.
+Set background color header and section titles.
+Set width of header and section title box.
+Set border size, style and color of header and section titles.
+*/
+h1,
+h2{
     color: black;
+    background-color: blanchedalmond;
+    width: 225px;
+    border: 3px double black;
 }
 
-p{
-    color: maroon;
+/*
+Set text color of h3.
+Set background color h3.
+Set width and height of h3 box.
+Set border size, style and color of header and section titles.
+*/
+h3{
+    color: black;
+    background-color: blanchedalmond;
+    width: 99%;
+    height: 500px;
+    border: 3px double black; 
 }
 
+/*Creates a flexbox*/
+main{
+    display: flex;
+}
+
+/*
+Creates a side bar, takes up 25% of the width of display.
+Gave sidebar a padding of 2px.
+Gave sidebar a flex-wrap property to maintain section titles within sidebar container.
+*/
+aside{
+    flex:25%;
+    padding: 2px;
+    flex-wrap: wrap;
+}
+
+/*
+Sets section to take up 75% of the width of display.
+Gave sidebar a padding of 2px.
+*/
+section{
+    flex: 75%;
+    padding: 2px;
+}
+
+/*
+Lines 69-78: 
+Created an unordered list and removed list formatting.
+Set margin to 0 and padding to 2.
+
+*/
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 2;
     overflow: hidden;
-    background-color: navy;
-    border: 1px solid red;
 }
 
 li{
     float: left;
 }
 
+/*
+Navigation bar titles set as block elements.
+Set width of container.
+Set text color of nav bar titles.
+Added padding.
+No text decorations.
+Aligned navigation bar titles to center of container.
+*/
 li a{
     display: block;
-    width: 85px;
+    width: 200px;
     color:aliceblue;
     padding: 1px;
     text-decoration: none;
     text-align: center;
 }
 
+/*
+When viewer hovers over nav bar titles, these elements will be highlighted.
+Background color of selected nav bar title changes to brown.
+*/
 li a:hover{
+    width: 220px;
     background-color:brown;
     color:antiquewhite;
+}
+
+/*
+Flexbox property added to navigation bar.
+Added space between each nav bar section title.
+Background color set to navy.
+Added size, style and color of navigation bar.
+*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: navy;
+    border: 2px solid maroon;
+}
+
+/*
+Set font-size of text to 18px.
+Flexbox property added to contact bar.
+Added space between each contact element.
+Background color set to slategray.
+Added size, style and color to contact bar.
+*/
+#contact-display{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background-color: slategray;
+    border: 2px solid black;
 }

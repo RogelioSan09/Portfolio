@@ -3,42 +3,51 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio</title>
+        <title>Rogelio Sanchez Portfolio</title>
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
     <body>
         <div class="container">
+            
+            <!--Created a header with the name of the person the portfolio belongs to.-->
             <header>
-                <h1>PORTFOLIO</h1>
+                <h1>Rogelio Sanchez</h1>
             </header>
-
-            <ul>
-                <li><a href="#ABOUT ME">ABOUT ME</a></li>
+            
+            <!--Created a navigation bar with the title of each section. -->
+            <!--Linked section titles to corresponding section in the web page.-->
+            <!--When link is clicked the UI will scroll to coresponding section.-->
+            <ul id="navbar">
+                <li><a href="#ABOUT_ME">ABOUT ME</a></li>
                 <li><a href="#WORK">WORK</a></li>
                 <li><a href="#CONTACT">CONTACT</a></li>
             </ul>
 
-            <section>
-                <h2>ABOUT ME</h2>
-                <p>
-                    This is my about me...
-                </p>
-            </section>
+            <main>
+                <!--Created a sidebar with each section title moved to the left side of web page-->
+                <aside>
+                    <h2 id="ABOUT_ME"> ABOUT ME</h2>
 
-            <section>
-                <h2>WORK</h2>
-                <p>
-                    These are my past projects...
-                </p>
-            </section>
+                    <h2 id="WORK">WORK</h2>
 
-            <section>
-                <h2>CONTACT</h2>
-                <p>
-                    This is my contact form...
-                </p>
-            </section>
+                    <h2 id="CONTACT">CONTACT</h2>
+                </aside>
+
+                <section>
+                    <h3>This is my about me...</h3>
+                    
+                    <h3>These are my past projects...</h3>
+
+                    <!--Created links for contact info-->
+                    <ul id="contact-display">
+                        <li><a href="mailto:rogeliosnchz@gmail.com">rogeliosnchz@gmail.com</a></li>
+                        <li><a href="https://github.com/RogelioSan09">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/rsanchez09/">LinkedIN</a></li>
+                    </ul>
+                </section>
+            </main>
+    
         </div>
     </body>
 
