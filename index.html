@@ -3,16 +3,17 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Rogelio Sanchez Portfolio</title>
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
 <body>
-    <div class="container">
+    <main>
         
         <!--Created a header with the name of the person the portfolio belongs to.-->
         <header>
-            <h1>Rogelio Sanchez</h1>
+            <h1>Portfolio: Rogelio Sanchez</h1>
             <!--Created a navigation bar with the title of each section. -->
         <!--Linked section titles to corresponding section in the web page.-->
         <!--When link is clicked the UI will scroll to coresponding section.-->
@@ -33,9 +34,9 @@
         
 
         <header>
-                <h2 id="ABOUT_ME">ABOUT ME</h2>
+                <h2>ABOUT ME</h2>
             <hr>
-            <p>
+            <p id="about-me">
                 Beginning my journey as a full stack web developer. I am currently honing my skills in HTML, CSS, JavaScript, Node.js, Express.js, MySQL, MongoDB, and React.js.
                 More about me to follow.
             </p>
@@ -47,7 +48,7 @@
             <section id="project-container">
                 <!--Created a section for each project.-->
                 <section class="project-card">
-                    <a href="https://dann-lam.github.io/04-08-2023-travlr/"><img src="assets/images/Travlr!.gif" alt="Travlr! Project Demo"/></a>
+                    <a href="https://dann-lam.github.io/04-08-2023-travlr/"><img id="travlr" src="assets/images/Travlr!.gif" alt="Travlr! Project Demo"/></a>
                     <h3 class="project-title">Travlr!</h3>
                     <p>
                         A travel planner application that calculates a user's trip budget by evaluating the distance, gas mileage, gas prices, and any misc. expenses the user may have while traveling.
@@ -87,7 +88,7 @@
                 </li>
             </ul>
         </footer>
-    </div>
+    </main>
 </body>
 
 </html>

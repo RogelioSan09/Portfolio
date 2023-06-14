@@ -6,9 +6,15 @@
 Set web page background.
 Set border size, style and color.
 */
-.container{
+main{
     background-color: rgb(4, 65, 63);
     border: 3px solid black;
+    border-radius: 5px;
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 5px;
 }
 
 /*
@@ -16,6 +22,7 @@ Set text color of header and section titles.
 */
 h1{
     color: white;
+    text-shadow: 2px 2px maroon;
 }
 
 /*
@@ -25,7 +32,8 @@ Added size, style and color of navigation bar.
 nav{
     background-color: rgb(51, 81, 110);
     border: 2px solid maroon;
-    justify-content: center;
+    border-radius: 2px;
+    text-align: center;
 }
 
 /*
@@ -36,12 +44,17 @@ h2{
     color: aliceblue;;
     width: fit-content;
     height: fit-content;
-    border: 3px solid black;
+    border: 3px double black;
+    border-radius: 5px;
+    text-shadow: 2px 2px maroon;
 }
 
 h3{
-    border: 3px double black;
-    justify-content: center; 
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
 }
 
 p{
@@ -50,6 +63,7 @@ p{
 }
 
 #project-container{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -57,17 +71,19 @@ p{
 
 .project-card {
     width: 30%;
-    height: 50%;
+    display: flex;
+    height: fit-content;
     background-color: rgb(51, 81, 110);
-    box-shadow: 0 4px 8px 0 rgba(210, 200, 200, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
+    box-shadow: 0 6px 10px 0 rgba(210, 200, 200, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 18px;
     border: 3px solid black;
+    border-radius: 8px;
     justify-content: center;
 }
 
 .project-title{
-    width: 100%;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
     color: aliceblue;
     text-align: center;
 }
@@ -85,6 +101,10 @@ img{
     height: auto;
 }
 
+img:hover{
+    box-shadow: 0 6px 10px 0 rgba(246, 168, 1, 0.2), 0 6px 20px 0 rgba(212, 37, 37, 0.19);
+}
+
 /*
 Created an unordered list and removed list formatting.
 Set margin to 0 and padding to 2.
@@ -98,7 +118,7 @@ ul{
 }
 
 li{
-    float: left;
+    display: inline-block;
 }
 
 /*
@@ -130,15 +150,47 @@ li a:hover{
 
 /*
 Set font-size of text to 18px.
-Background color set to slategray.
 Added size, style and color to contact bar.
 */
 footer{
-    font-size: 18px;
     border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #contact-display{
     background-color: rgb(51, 81, 110);
     border: 2px solid maroon;
+    border-radius: 4px;
+}
+
+/* Desktops - main container changes width - up to 1200px */
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Tablets - header changes color - up to 992px */ 
+@media screen and (max-width: 992px) {
+    main {
+        width: 100%;
+        height: auto;
+    }
+  }
+  
+/* Large smartphones - main container changes width - up to 768px */
+@media screen and (max-width: 768px) {
+    main {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* Small smartphones - main container changes width - up to 576px*/
+@media screen and (max-width: 576px ) {
+    main {
+        width: fit-content;
+        height: auto;
+    }
 }
