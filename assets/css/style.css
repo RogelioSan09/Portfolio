@@ -7,7 +7,7 @@ Set web page background.
 Set border size, style and color.
 */
 .container{
-    background-color: rgb(15, 108, 103);
+    background-color: rgb(4, 65, 63);
     border: 2px solid black;
 }
 
@@ -15,7 +15,16 @@ Set border size, style and color.
 Set text color of header and section titles.
 */
 h1{
-    color: black;
+    color: white;
+}
+
+/*
+Background color set to navy.
+Added size, style and color of navigation bar.
+*/
+nav{
+    background-color: rgb(51, 81, 110);
+    border: 2px solid maroon;
 }
 
 /*
@@ -23,24 +32,44 @@ Set text color of h2.
 Set width and height of h2 box.
 */
 h2{
-    color: black;
+    color: aliceblue;;
     width: fit-content;
-    height: auto;
+    height: fit-content;
     border: 3px solid black;
 }
 
 h3{
-    color: black;
-    background-color: blanchedalmond;
+    color: black;;
+    width: fit-content;
+    height: auto;
     border: 3px double black; 
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+}
+
+#project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-card {
     width: 25%;
-    background-color: white;
+    height: auto;
+    background-color: rgb(51, 81, 110);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-    opacity: 0.5;
+    margin: 10px;
+    border: 3px solid black;
+    justify-content: center;
+}
+
+.project-title{
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
 }
 
 /*
@@ -52,7 +81,7 @@ section{
 }
 
 img{
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
@@ -100,21 +129,16 @@ li a:hover{
 }
 
 /*
-Background color set to navy.
-Added size, style and color of navigation bar.
-*/
-nav{
-    background-color: rgb(51, 81, 110);
-    border: 2px solid maroon;
-}
-
-/*
 Set font-size of text to 18px.
 Background color set to slategray.
 Added size, style and color to contact bar.
 */
 footer{
     font-size: 18px;
-    background-color: rgb(51, 81, 110);
     border: 2px solid black;
+}
+
+#contact-display{
+    background-color: rgb(51, 81, 110);
+    border: 2px solid maroon;
 }
