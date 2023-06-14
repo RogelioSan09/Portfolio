@@ -7,40 +7,77 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
-    <body>
-        <div class="container">
-            
-            <!--Created a header with the name of the person the portfolio belongs to.-->
-            <header>
-                <h1>Rogelio Sanchez</h1>
-            </header>
-            
+<body>
+    <div class="container">
+        
+        <!--Created a header with the name of the person the portfolio belongs to.-->
+        <header>
+            <h1>Rogelio Sanchez</h1>
             <!--Created a navigation bar with the title of each section. -->
-            <!--Linked section titles to corresponding section in the web page.-->
-            <!--When link is clicked the UI will scroll to coresponding section.-->
-            <ul id="navbar">
-                <li><a href="#ABOUT_ME">ABOUT ME</a></li>
-                <li><a href="#WORK">WORK</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
-            </ul>
+        <!--Linked section titles to corresponding section in the web page.-->
+        <!--When link is clicked the UI will scroll to coresponding section.-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#ABOUT_ME">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a href="#WORK">WORK</a>
+                    </li>
+                    <li>
+                        <a href="#CONTACT">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
 
-            <section>
-                <h2 id="ABOUT_ME"> ABOUT ME</h2>
+        <header class="container">
+            <h2 id="ABOUT_ME">ABOUT ME</h2>
+            <hr>
+            <p>
+                Beginning my journey as a full stack web developer. More about me to follow.
+            </p>
+        </header>
+
+        <header class="container">
+            <h2 id="WORK">WORK</h2>
+            <hr>
+            <section class="project-card">
+                <img src="assets/images/Travlr!.gif" alt="Travlr! Project Demo"/>
+                <h3 class="project-title">Travlr!</h3>
+                <p>A travel planner</p>
             </section>
 
-            <section>
-                <h2 id="WORK">WORK</h2>
+            <section class="project-card">
+                <img src="assets\images\HI.jpg" alt="Foodie Finder Project Demo"/>
+                <h3 class="project-title">Foodie Finder</h3>
+                <p>A restaurant finder</p>
             </section>
 
-            <h3 id="CONTACT">CONTACT
+            <section class="project-card">
+                <img src="assets\images\YNP.jpg" alt="Fisherman's Hook Project Demo"/>
+                <h3 class="project-title">Fisherman's Hook</h3>
+                <p>A fishing social network platform</p>
+            </section>
+        </header>
+
+        <footer>
+            <h3>CONTACT</h3>
             <!--Created links for contact info-->
             <ul id="contact-display">
-                <li><a href="mailto:rogeliosnchz@gmail.com">rogeliosnchz@gmail.com</a></li>
-                <li><a href="https://github.com/RogelioSan09">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/rsanchez09/">LinkedIN</a></li>
+                <li>
+                    <a href="mailto:rogeliosnchz@gmail.com">rogeliosnchz@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://github.com/RogelioSan09">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rsanchez09/">LinkedIn</a>
+                </li>
             </ul>
-            </h3>
-        </div>
-    </body>
+        </footer>
+    </div>
+</body>
 
 </html>
